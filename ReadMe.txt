@@ -5,10 +5,10 @@ Los archivos que estan en la carpeta files/incomig/backup se deben copiar a la c
 
 El resultado del procesamiento se verá en las rutas configuradas en el archivo config.properties (outgoing)
 
-Para correr el proyecto, desde consola ejecutar:
+Para ejecutar el proyecto, instalar en el servidor de JBOSS:
 
-    mvn celan camel:run
+clean install
 
-Desde JBoss developer studio, crear un perfil de ejecución:
+Desde la consola del servidor:
 
-	clean camel:run
+install -s mvn:com.test.queue/test-queue/1.0.0-SNAPSHOT
